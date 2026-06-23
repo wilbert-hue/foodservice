@@ -150,7 +150,7 @@ export function GlobalKPICards() {
     const marketName = data.metadata.market_name || 'Global Market'
 
     const geographyLabel = actualSelectedGeographies.length === 0
-      ? `Global ${marketName}`
+      ? marketName
       : actualSelectedGeographies.length === 1
       ? `${actualSelectedGeographies[0]} ${marketName}`
       : `${actualSelectedGeographies.length} Geographies ${marketName}`
@@ -273,6 +273,12 @@ export function GlobalKPICards() {
               </p>
             </div>
           </div>
+        </div>
+
+        {/* Demo data disclaimer */}
+        <div className="mt-3 px-3 py-2 bg-amber-50 border border-amber-300 rounded text-xs text-amber-800 flex items-start gap-1.5">
+          <span className="font-bold shrink-0">NOTE:</span>
+          <span>All the data in the dashboard is demo data. No real world data is related to this.</span>
         </div>
       </div>
     </div>

@@ -1231,9 +1231,11 @@ export async function processJsonDataAsync(
     if (allYears.length === 0) {
       throw new Error('No years found in any data source')
     }
+    // Limit years to 2024-2030
+    allYears = allYears.filter(y => y <= 2030)
     const startYear = Math.min(...allYears)
     const forecastYear = Math.max(...allYears)
-    const baseYear = startYear + 5 // Base year = 2026 for 2021-2033 data
+    const baseYear = startYear + 2 // Base year: 2026 for 2024-2030 data (Historical: 2024-2025, Forecast: 2026-2030)
     // Historical/Forecast split: years before base year are historical
     const historicalEndYear = baseYear - 1 // 2025
     console.log(`Years: ${startYear} to ${forecastYear}, base: ${baseYear}, historical end: ${historicalEndYear}`)
@@ -1472,18 +1474,18 @@ export async function processJsonDataAsync(
     
     // Build metadata
     const metadata: Metadata = {
-      market_name: 'Normothermic Machine Perfusion Market',
+      market_name: 'Foodservice Market Entry Strategy',
       market_type: 'Market Analysis',
-      industry: 'Healthcare & Pharmaceuticals',
+      industry: 'Food Service',
       years: allYears,
       start_year: startYear,
       base_year: baseYear,
       forecast_year: forecastYear,
       historical_years: allYears.filter(y => y <= historicalEndYear),
       forecast_years: allYears.filter(y => y > historicalEndYear),
-      currency: 'USD',
-      value_unit: 'Million',
-      volume_unit: 'Million Units',
+      currency: 'INR',
+      value_unit: 'Crore',
+      volume_unit: 'Thousand Outlets',
       has_value: valueRecords.length > 0,
       has_volume: volumeRecords.length > 0,
     }

@@ -1,62 +1,83 @@
 {
-  "Global": {
-    "By Type": {
-      "Sub-Normothermic Perfusion (20–34°C)": {},
-      "Warm or Normothermic Perfusion (35–37°C)": {}
+  "India": {
+    "By Market Type": {
+      "Restaurant Market": {},
+      "Cloud Kitchen Market": {}
     },
-    "By Organ Type": {
-      "Liver": {},
-      "Heart": {},
-      "Lung": {},
-      "Kidney": {},
-      "Others (Pancreas, Small bowel / Intestine, Composite Tissues / Limb Perfusion (emerging use cases))": {}
+    "By Market Structure": {
+      "Organized Market": {},
+      "Unorganized Market": {}
     },
-    "Application / Use Case": {
-      "Organ Preservation": {},
-      "Viability Assessment": {},
-      "Physiologic Transport": {},
-      "Reconditioning Marginal Organs": {},
-      "Others (Research Use / Protocol development)": {}
+    "By Restaurant Format": {
+      "Quick Service Restaurants (QSR)": {},
+      "Casual Dining Restaurants (CDR)": {},
+      "Fine Dining Restaurants (FDR)": {},
+      "Delivery-led Restaurants": {},
+      "Take-out Formats": {},
+      "Cloud Kitchens": {},
+      "Food Court Formats": {}
     },
-    "By End User": {
-      "Hospitals & Clinics": {},
-      "Specialty Clinic/Centers": {},
-      "Transplant Centers": {},
-      "Others (Research Institutes/Centers, Organ Procurement Organizations, etc.)": {}
+    "By Category": {
+      "Chicken": {},
+      "Chinese": {},
+      "Momo": {},
+      "Vada Pav": {},
+      "Dosa": {},
+      "Idli": {},
+      "Roti": {},
+      "Biryani": {}
+    },
+    "By Market Structure X Category": {
+      "Organized Market": {
+        "Chicken": {},
+        "Chinese": {},
+        "Momo": {},
+        "Vada Pav": {},
+        "Dosa": {},
+        "Idli": {},
+        "Roti": {},
+        "Biryani": {}
+      },
+      "Unorganized Market": {
+        "Chicken": {},
+        "Chinese": {},
+        "Momo": {},
+        "Vada Pav": {},
+        "Dosa": {},
+        "Idli": {},
+        "Roti": {},
+        "Biryani": {}
+      }
     },
     "By Region": {
-      "North America": {
-        "U.S.": {},
-        "Canada": {}
+      "North India": {
+        "Delhi NCR": {},
+        "Punjab": {},
+        "Haryana": {},
+        "Rajasthan": {},
+        "Uttar Pradesh": {},
+        "Rest of North India": {}
       },
-      "Europe": {
-        "U.K.": {},
-        "Germany": {},
-        "Italy": {},
-        "France": {},
-        "Spain": {},
-        "Russia": {},
-        "Rest of Europe": {}
+      "South India": {
+        "Karnataka": {},
+        "Telangana": {},
+        "Tamil Nadu": {},
+        "Kerala": {},
+        "Rest of South India": {}
       },
-      "Asia Pacific": {
-        "China": {},
-        "India": {},
-        "Japan": {},
-        "South Korea": {},
-        "ASEAN": {},
-        "Australia": {},
-        "Rest of Asia Pacific": {}
+      "West & Central India": {
+        "Maharashtra": {},
+        "Gujarat": {},
+        "Madhya Pradesh": {},
+        "Chhattisgarh": {},
+        "Rest of West & Central India": {}
       },
-      "Latin America": {
-        "Brazil": {},
-        "Argentina": {},
-        "Mexico": {},
-        "Rest of Latin America": {}
-      },
-      "Middle East & Africa": {
-        "GCC": {},
-        "South Africa": {},
-        "Rest of Middle East & Africa": {}
+      "East India": {
+        "West Bengal": {},
+        "Odisha": {},
+        "Bihar": {},
+        "Assam": {},
+        "Rest of East India": {}
       }
     }
   }
